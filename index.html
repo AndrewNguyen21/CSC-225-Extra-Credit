@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Extra Credit Project</title>
+  </head>
+  <body>
+
+    <!-- div for site title/logo -->
+    <div class="container text-center mt-5 display-4"><i class="fas fa-sun"></i> Current Weather <i class="fas fa-cloud"></i></div>
+
+    <!-- div for zip code entry form -->
+    <div class="container-fluid d-flex mt-5 col-12 col-md-4">
+        <form class="container align-self-center p-4 border border-dark rounded vertical-center">
+            <div class="form-group text-center">
+                <label for="zip">Zip Code</label>
+                <input type="number" id="zip" class="form-control input mx-auto" placeholder="Zip Code">
+            </div>
+
+            <div class="form-group d-flex justify-content-between">
+                <button type="button" class="btn btn-info">Submit</button>
+                <input type="reset" id="reset" class="btn btn-danger" value="Clear Form">
+            </div>
+        </form>
+    </div>
+
+    <!-- div to present the weather -->
+    <div class="container-fluid d-flex justify-content-center text-justify mt-5 col-12 col-md-4">
+      <div class="container align-self-center p-3 border border-dark rounded vertical-center">
+          <p class="d-flex justify-content-between">Zip Code: <span id="location"></span></p>
+          <p class="d-flex justify-content-between">Condition: <span id="condition"></span></p>
+          <p class="d-flex justify-content-between">Sky: <span id="sky"></span></p>
+          <p class="d-flex justify-content-between">Temperature: <span id="temp-now"></span></p>
+          <p class="d-flex justify-content-between">Today's High: <span id="temp-high"></span></p>
+          <p class="d-flex justify-content-between">Today's Low: <span id="temp-low"></span></p>
+          <p class="d-flex justify-content-between">Wind: <span id="wind"></span></p>
+      </div>
+    </div>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
