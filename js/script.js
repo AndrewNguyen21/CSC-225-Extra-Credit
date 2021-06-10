@@ -16,7 +16,7 @@ $(document).ready(function (){
             $zip = $('#zip').val();
 
             //makes request to API
-            var request = axios.get('http://api.openweathermap.org/data/2.5/weather?zip=' + $zip + ',us&appid=a9f04f5211af4ecc89ff5929217dab44');
+            var request = axios.get('https://api.openweathermap.org/data/2.5/weather?zip=' + $zip + ',us&appid=a9f04f5211af4ecc89ff5929217dab44');
 
             //console log to confirm access to API
             console.log('Request to API granted');
